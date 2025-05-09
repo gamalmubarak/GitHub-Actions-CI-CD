@@ -18,8 +18,6 @@ jobs:
       # Get code from repo
       - name: Checkout code
         uses: actions/checkout@v3
-        with:
-        ref: ${{ github.head_ref || github.ref }}
 
       - name: Use Node.js 21.x
         uses: actions/setup-node@v1
